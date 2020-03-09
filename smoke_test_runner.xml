@@ -1,0 +1,21 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<!--ctrl+/-->
+
+<suite name="Vytrack Smoke Test" verbose="10">
+    <!--    How to run all test-->
+    <test name="Smoke test">
+        <packages>
+            <package name="com.cybertek.tests.day15_extent_report"></package>
+            <package name="com.cybertek.tests.day15_pom_test"></package>
+        </packages>
+        <classes>
+            <class name="com.TestNG_Project.pages.BasePage">
+                <methods>
+                    <exclude name="loginAsStoreManager"></exclude>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+</suite>
