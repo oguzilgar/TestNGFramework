@@ -22,36 +22,11 @@ public class aaa_Practice_aaa {
 
     public static void main(String[] args) {
 
-        int number =3455;
-
-        System.out.println(findFirst(number));
-
+//cvnv v
+        //zxh bxh xh xh h
     }
-
-    public static int findFirst(int num){
-
-
-        while (num>=10){
-            String strNum = String.valueOf(num);
-            int sum=0;
-            for(int i=0; i<strNum.length(); i++){
-
-                int digit = Integer.valueOf(""+strNum.charAt(i));
-                sum += digit;
-
-            }
-
-            num = num - sum;
-
-        }
-
-        return num;
-    }
-
-
 
 }
-
 
 
 
